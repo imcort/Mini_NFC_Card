@@ -49,6 +49,8 @@
 #include "card_emu.h"
 
 #include "nrf_drv_clock.h"
+#include "app_timer.h"
+#include "bsp.h"
 
 static void lfclk_config(void)
 {
@@ -58,9 +60,46 @@ static void lfclk_config(void)
     nrf_drv_clock_lfclk_request(NULL);
 }
 
+void bsp_evt_handler(bsp_event_t evt)
+{
+    uint32_t err_code;
+    switch (evt)
+    {
+        case BSP_EVENT_KEY_0:
+				
+						NRF_LOG_INFO("KEY0");
+            break;
+
+        case BSP_EVENT_KEY_1:
+						NRF_LOG_INFO("KEY1");
+            break;
+				
+				case BSP_EVENT_KEY_2:
+						NRF_LOG_INFO("KEY2");
+            break;
+
+        default:
+					NRF_LOG_INFO("KEY?");
+            return; // no implementation needed
+    }
+}
+
+static void bsp_configuration()
+{
+    uint32_t err_code;
+	
+		err_code = app_timer_init();
+    APP_ERROR_CHECK(err_code);
+
+    err_code = bsp_init(BSP_INIT_BUTTONS, bsp_evt_handler);
+    APP_ERROR_CHECK(err_code);
+}
+
 int main(void)
 {
+	
 		lfclk_config();
+		bsp_configuration();
 
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL));
     NRF_LOG_DEFAULT_BACKENDS_INIT();
@@ -77,4 +116,5 @@ int main(void)
         __WFE();
         __WFE();
     }
+		
 }
