@@ -63,19 +63,23 @@ static void lfclk_config(void)
 void bsp_evt_handler(bsp_event_t evt)
 {
     uint32_t err_code;
+		static uint8_t slot = 0;
     switch (evt)
     {
         case BSP_EVENT_KEY_0:
 				
 						NRF_LOG_INFO("KEY0");
+						ntag215_card_change(++slot);
             break;
 
         case BSP_EVENT_KEY_1:
 						NRF_LOG_INFO("KEY1");
+						ntag215_card_change(--slot);
             break;
 				
 				case BSP_EVENT_KEY_2:
 						NRF_LOG_INFO("KEY2");
+						ntag215_current_slot_init();
             break;
 
         default:
