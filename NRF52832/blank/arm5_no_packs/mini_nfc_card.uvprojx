@@ -417,6 +417,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_emu.c</FilePath>
             </File>
+            <File>
+              <FileName>card_slot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_slot.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
