@@ -338,7 +338,7 @@
               <MiscControls>--reduce_paths</MiscControls>
               <Define>APP_TIMER_V2 APP_TIMER_V2_RTC1_ENABLED BOARD_CUSTOM FLOAT_ABI_HARD NRF52 NRF52832_XXAA NRF52_PAN_74 __HEAP_SIZE=8192 __STACK_SIZE=8192 DEBUG</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\config;..\..\..\..\..\..\components;..\..\..\..\..\..\components\boards;..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd;..\..\..\..\..\..\components\libraries\atomic;..\..\..\..\..\..\components\libraries\atomic_fifo;..\..\..\..\..\..\components\libraries\balloc;..\..\..\..\..\..\components\libraries\bsp;..\..\..\..\..\..\components\libraries\button;..\..\..\..\..\..\components\libraries\delay;..\..\..\..\..\..\components\libraries\experimental_section_vars;..\..\..\..\..\..\components\libraries\log;..\..\..\..\..\..\components\libraries\log\src;..\..\..\..\..\..\components\libraries\memobj;..\..\..\..\..\..\components\libraries\ringbuf;..\..\..\..\..\..\components\libraries\scheduler;..\..\..\..\..\..\components\libraries\sortlist;..\..\..\..\..\..\components\libraries\strerror;..\..\..\..\..\..\components\libraries\timer;..\..\..\..\..\..\components\libraries\util;..\..\..;..\..\..\..\..\..\external\fprintf;..\..\..\..\..\..\external\segger_rtt;..\..\..\..\..\..\integration\nrfx;..\..\..\..\..\..\integration\nrfx\legacy;..\..\..\..\..\..\modules\nrfx;..\..\..\..\..\..\modules\nrfx\drivers\include;..\..\..\..\..\..\modules\nrfx\hal;..\config;..\..\..\..\..\..\user_driver\nfc_card_emulator;..\..\..\..\..\..\components\libraries\fstorage;..\..\..\..\..\..\components\libraries\atomic</IncludePath>
+              <IncludePath>..\..\..\config;..\..\..\..\..\..\components;..\..\..\..\..\..\components\boards;..\..\..\..\..\..\components\drivers_nrf\nrf_soc_nosd;..\..\..\..\..\..\components\libraries\atomic;..\..\..\..\..\..\components\libraries\atomic_fifo;..\..\..\..\..\..\components\libraries\balloc;..\..\..\..\..\..\components\libraries\bsp;..\..\..\..\..\..\components\libraries\button;..\..\..\..\..\..\components\libraries\delay;..\..\..\..\..\..\components\libraries\experimental_section_vars;..\..\..\..\..\..\components\libraries\log;..\..\..\..\..\..\components\libraries\log\src;..\..\..\..\..\..\components\libraries\memobj;..\..\..\..\..\..\components\libraries\ringbuf;..\..\..\..\..\..\components\libraries\scheduler;..\..\..\..\..\..\components\libraries\sortlist;..\..\..\..\..\..\components\libraries\strerror;..\..\..\..\..\..\components\libraries\timer;..\..\..\..\..\..\components\libraries\util;..\..\..;..\..\..\..\..\..\external\fprintf;..\..\..\..\..\..\external\segger_rtt;..\..\..\..\..\..\integration\nrfx;..\..\..\..\..\..\integration\nrfx\legacy;..\..\..\..\..\..\modules\nrfx;..\..\..\..\..\..\modules\nrfx\drivers\include;..\..\..\..\..\..\modules\nrfx\hal;..\config;..\..\..\..\..\..\user_driver\nfc_card_emulator;..\..\..\..\..\..\components\libraries\fstorage;..\..\..\..\..\..\components\libraries\atomic;..\..\..\..\..\..\user_libraries\nrf_u8g2;..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -397,6 +397,16 @@
               <FileType>5</FileType>
               <FilePath>..\config\custom_board.h</FilePath>
             </File>
+            <File>
+              <FileName>drv_oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\drv_oled.c</FilePath>
+            </File>
+            <File>
+              <FileName>disp_menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\disp_menu.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -421,6 +431,191 @@
               <FileName>ntag215_card_emu.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\..\..\..\user_driver\nfc_card_emulator\ntag215_card_emu.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>u8g2</GroupName>
+          <Files>
+            <File>
+              <FileName>u8g2_bitmap.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_bitmap.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_box.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_box.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_buffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_buffer.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_circle.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_circle.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_cleardisplay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_cleardisplay.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_font.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_hvline.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_hvline.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_input_value.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_input_value.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_intersection.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_intersection.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_kerning.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_kerning.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_line.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_line.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_ll_hvline.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_ll_hvline.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_message.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_message.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_polygon.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_polygon.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_selection_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_selection_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8g2_setup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8g2_setup.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8log.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8log.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8log_u8g2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8log_u8g2.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8log_u8x8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8log_u8x8.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_8x8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_8x8.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_byte.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_byte.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_cad.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_cad.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_capture.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_capture.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_debounce.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_debounce.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_display.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_display.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_fonts.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_fonts.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_input_value.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_input_value.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_message.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_message.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_selection_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_selection_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_setup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_setup.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_string.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_string.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_u8toa.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_u8toa.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_u16toa.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_u16toa.c</FilePath>
+            </File>
+            <File>
+              <FileName>u8x8_d_ssd1306_128x64_noname.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\..\..\user_libraries\nrf_u8g2\u8g2\csrc\u8x8_d_ssd1306_128x64_noname.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -52,6 +52,8 @@
 #include "app_timer.h"
 #include "bsp.h"
 
+#include "drv_oled.h"
+
 static void lfclk_config(void)
 {
     ret_code_t err_code = nrf_drv_clock_init();
@@ -69,16 +71,19 @@ void bsp_evt_handler(bsp_event_t evt)
         case BSP_EVENT_KEY_0:
 				
 						NRF_LOG_INFO("KEY0");
+						drv_oled_on();
 						ntag215_card_change(++slot);
             break;
 
         case BSP_EVENT_KEY_1:
 						NRF_LOG_INFO("KEY1");
+						drv_oled_on();
 						ntag215_card_change(--slot);
             break;
 				
 				case BSP_EVENT_KEY_2:
 						NRF_LOG_INFO("KEY2");
+						drv_oled_on();
 						ntag215_current_slot_init();
             break;
 
@@ -107,11 +112,13 @@ int main(void)
 
     APP_ERROR_CHECK(NRF_LOG_INIT(NULL));
     NRF_LOG_DEFAULT_BACKENDS_INIT();
-
+	
+		
+		drv_oled_begin();
     card_emu_begin();
 
     NRF_LOG_INFO("NFC Card emulation started.");
-
+		
     while (1)
     {
 
