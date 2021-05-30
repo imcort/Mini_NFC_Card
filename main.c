@@ -46,7 +46,7 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
-#include "card_emu.h"
+#include "ntag215_card_emu.h"
 
 #include "nrf_drv_clock.h"
 #include "app_timer.h"

@@ -290,8 +290,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_emu.c</PathWithFileName>
-      <FilenameWithoutPath>card_emu.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_slot.c</PathWithFileName>
+      <FilenameWithoutPath>card_slot.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -302,8 +302,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_slot.c</PathWithFileName>
-      <FilenameWithoutPath>card_slot.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\ntag215_card_emu.c</PathWithFileName>
+      <FilenameWithoutPath>ntag215_card_emu.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
