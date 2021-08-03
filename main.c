@@ -118,6 +118,8 @@ int main(void)
     card_emu_begin();
 
     NRF_LOG_INFO("NFC Card emulation started.");
+    
+    drv_oled_on();
 		
     while (1)
     {
