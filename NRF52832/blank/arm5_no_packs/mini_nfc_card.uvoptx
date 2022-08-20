@@ -10,7 +10,7 @@
     <aExt>*.s*; *.src; *.a*</aExt>
     <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
-    <tExt>*.txt; *.h; *.inc</tExt>
+    <tExt>*.txt; *.h; *.inc; *.md</tExt>
     <pExt>*.plm</pExt>
     <CppX>*.cpp</CppX>
     <nMigrate>0</nMigrate>
@@ -290,7 +290,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\nfc_t2t_lib_keil.lib</PathWithFileName>
+      <PathWithFileName>..\..\..\..\..\..\user_drivers\nfc_card_emulator\nfc_t2t_lib_keil.lib</PathWithFileName>
       <FilenameWithoutPath>nfc_t2t_lib_keil.lib</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -302,7 +302,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\hal_nfc_t2t.c</PathWithFileName>
+      <PathWithFileName>..\..\..\..\..\..\user_drivers\nfc_card_emulator\hal_nfc_t2t.c</PathWithFileName>
       <FilenameWithoutPath>hal_nfc_t2t.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -314,7 +314,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\card_slot.c</PathWithFileName>
+      <PathWithFileName>..\..\..\..\..\..\user_drivers\nfc_card_emulator\card_slot.c</PathWithFileName>
       <FilenameWithoutPath>card_slot.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -326,7 +326,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\..\..\user_driver\nfc_card_emulator\ntag215_card_emu.c</PathWithFileName>
+      <PathWithFileName>..\..\..\..\..\..\user_drivers\nfc_card_emulator\ntag215_card_emu.c</PathWithFileName>
       <FilenameWithoutPath>ntag215_card_emu.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
